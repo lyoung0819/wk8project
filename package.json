@@ -1,0 +1,19 @@
+{
+  "name": "week8project",
+  "version": "1.0.0",
+  "description": "week 8 project with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./dist/index.js"
+  },
+  "author": "Lexie Young",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.4.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.8"
+  }
+}
