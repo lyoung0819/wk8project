@@ -47,15 +47,61 @@ function createUser(name:string, age:number): User {
     // addToCart
     //     this function will bring an object of Item Type and an User object and it will add the item to the users cart
    
-    function addToCart(item:Item, user:User):void {
+    function addToCart(itemObj:Item, userObj:User):void {
+        userObj.cart.push(itemObj)
+        console.log(`You've added ${itemObj.name} to your cart!`)
      }
 
-   
+
     // removeFromCart
     //     this function will bring an object of Item Type and an User object and it will remove all the instances of the item to the users cart (so the cart would have zero of these items left)
+    
+    function removeFromCart(itemObj:Item, userObj:User):void {
+        // check to see if item is in cart
+        for (let item in userObj.cart){
+            if (itemObj.name === item[1]){
+                //delete the item... ???
+            }
+        }
+        console.log(`You've removed all ${itemObj.name}(s) from your cart!`)
+     }
+    
     // removeQuantityFromCart
     //     this function will bring an object of Item Type and an User object and a quantity of the item to remove and it will remove the quantity amount of instances of the item to the users cart (so if the cart had 5 red hats and we pass inthe red hat item and the number 3 for the quantitiy we would end up with 2 red hats left in the cart)
+    
+    // function removeQuantityFromCart(item:Item, quantitiy:number):void{
+    // }
+    
     // cartTotal
     //     this function will calculate the total price of all items in our cart and RETURNS that value
+
+
+
     // printCart
     //     this function will take a user and console log the items in the users cart
+
+
+    // -----
+
+//     Step 4: Create Driver Code to emulate a front end user
+        // use the functions created to accomplish these tasks in order
+        // Create a User
+    // Create 3 Items to Sellfor this example we will call them Item A Item B and Item C (you can name them anything that make sense)
+    // Add Item A to the users Cart
+    //   print the contents of the user's cart
+    //      print the Total of the user's cart
+    // Add 3 Item B to the users Cart
+    //      print the contents of the user's cart
+    //      print the Total of the user's cart
+    // Add 3 Item c to the users Cart
+    //      print the contents of the user's cart
+    //      print the Total of the user's cart
+    // Use your remove (not remove by Quantity function) to remove all of Item B from your cart
+    //      print the contents of the user's cart
+    //      print the Total of the user's cart
+    // Use your remove Quantity function to remove 2 of Item C from the user's cart
+    //       print the contents of the user's cart
+    //      print the Total of the user's cart
+     
+    
+    // Verify all functions work as expected, if they don't figure out why not and fix your functions.
